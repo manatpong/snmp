@@ -1,0 +1,34 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav sidenav-style" fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)">
+
+    <mat-toolbar class="nav-toolbar">
+      <img src="http://www.siam3dprinter.com/wp-content/uploads/2015/11/Logo-Siam-3D-Printer-Color.png" class="logo">
+    </mat-toolbar>
+
+    <mat-nav-list class="nav-list-style">
+
+       <a id="dashboard" mat-list-item routerLink="/my-dashboard" (click)="selectMenu($event)" [ngClass]="this.selected_menu == 'my-dashboard' ? 'selected-menu' : null">
+          <mat-icon class="icon-spacer"></mat-icon>
+          Dashboard
+      </a>
+
+      <a id="attendance" mat-list-item routerLink="/attendance" (click)="selectMenu($event)" [ngClass]="this.selected_menu == 'attendance' ? 'selected-menu' : null">
+        <mat-icon class="mat-icon-rtl-mirror" svgIcon="thumb-up"></mat-icon>
+        Attendance
+      </a>
+
+        <a id="my-table" mat-list-item routerLink="/my-table" (click)="selectMenu($event)" [ngClass]="this.selected_menu == 'my-table' ? 'selected-menu' : null">
+          <mat-icon class="mat-icon-rtl-mirror" svgIcon="thumb-up"></mat-icon>
+          Employee
+        </a>
+
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="bg">
+    <mat-toolbar class="nav-toolbar">
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

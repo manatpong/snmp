@@ -1,0 +1,57 @@
+.sidenav-container {
+  height: 100%;
+  
+}
+
+.sidenav {
+  width: 200px;
+  box-shadow: 3px 0 6px rgba(0,0,0,.24);
+}
+
+.nav-toolbar{
+  background: linear-gradient(rgb(7, 156, 224),#007bce);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: -1px 3px 0px #888888;
+  .logo{
+    width: 100px;
+  }
+}
+
+.sidenav-style{
+  background-color: #fff;
+  color: #323131;
+}
+
+.nav-list-style{
+  a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #323131;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  a:hover {
+    color: #fff;
+  }
+}
+  
+
+.selected-menu{
+  color: #d50000;
+  border-right: 5px solid #d50000;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+
+.mat-list-item:hover {
+  border-right: 5px solid #d50000;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  background-color: #B42000;
+  
+}
+
+.bg {
+  background: #ecf9ff;
+}

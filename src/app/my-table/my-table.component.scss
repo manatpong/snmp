@@ -1,0 +1,29 @@
+/* Structure */
+.table-container{
+  margin: 20px;
+  .col-one{
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    font-size: 30px;
+    background-color: antiquewhite;
+  }
+  .col-two{
+    display: flex;
+    flex-direction: row;
+    background-color: aquamarine;
+    height: 60px;
+  }
+  .col-three{
+    
+  }
+}
+
+table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }

@@ -14,6 +14,7 @@ export class MyNavComponent implements OnInit {
   selected_menu: string;
   isHandset: Observable<BreakpointState> = this.breakpointObserver.observe(Breakpoints.Handset);
   
+  show_noti: boolean = false;
 
   ngOnInit() {
 
@@ -26,6 +27,15 @@ export class MyNavComponent implements OnInit {
 
     this.selected_menu = event.currentTarget.id;
 
+  }
+
+  showNoti() {
+    if(this.show_noti == false) {
+      this.show_noti = true;
+    }
+    else {
+      this.show_noti = false
+    }
   }
 
 

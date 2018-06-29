@@ -8,59 +8,6 @@
       <div class="each-item">
         <div class="item-content">
           <div class="pic-container">
-            <div class="text">{{ snmpData[4]['machine_desc'] }}</div>
-            <div class="picture">
-              <img src="{{ snmpData[4]['img_path'] }}">
-            </div>
-            <div class="text">{{ snmpData[4]['name'] }}</div>
-          </div>
-          <div class="content">
-            <div class="row">
-              <div class="tone-text">{{ snmpData[4]['color'] }}</div>
-              <div class="tone-color">
-                <mat-progress-bar class="progress black-progress" mode="determinate" value="{{ snmpData[4]['value_percent'] }}"></mat-progress-bar>
-              </div>
-              <div class="percent-contain">
-                <div class="percent">{{ snmpData[4]['value_percent'] }}%</div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="tone-text">{{ snmpData[5]['color'] }}</div>
-              <div class="tone-color">
-                <mat-progress-bar class="progress magenta-progress" mode="determinate" value="{{ snmpData[5]['value_percent'] }}"></mat-progress-bar>
-              </div>
-              <div class="percent-contain">
-                <div class="percent">{{ snmpData[5]['value_percent'] }}%</div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="tone-text">{{ snmpData[6]['color'] }}</div>
-              <div class="tone-color">
-                <mat-progress-bar class="progress yellow-progress" mode="determinate" value="{{ snmpData[6]['value_percent'] }}"></mat-progress-bar>
-              </div>
-              <div class="percent-contain">
-                <div class="percent">{{ snmpData[6]['value_percent'] }}%</div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="tone-text">{{ snmpData[7]['color'] }}</div>
-              <div class="tone-color">
-                <mat-progress-bar class="progress cyan-progress" mode="determinate" value="{{ snmpData[7]['value_percent'] }}"></mat-progress-bar>
-              </div>
-              <div class="percent-contain">
-                <div class="percent">{{ snmpData[7]['value_percent'] }}%</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-    <div class="item-container">
-      <div class="each-item">
-        <div class="item-content">
-          <div class="pic-container">
             <div class="text">{{ snmpData[0]['machine_desc'] }}</div>
             <div class="picture">
               <img src="{{ snmpData[0]['img_path'] }}">
@@ -99,7 +46,6 @@
               <div class="tone-text">{{ snmpData[3]['color'] }}</div>
               <div class="tone-color">
                 <mat-progress-bar class="progress cyan-progress" mode="determinate" value="{{ snmpData[3]['value_percent'] }}"></mat-progress-bar>
-
               </div>
               <div class="percent-contain">
                 <div class="percent">{{ snmpData[3]['value_percent'] }}%</div>
@@ -109,50 +55,54 @@
         </div>
 
       </div>
+
+    </div>
+    <div class="item-container">
       <div class="each-item">
         <div class="item-content">
           <div class="pic-container">
-            <div class="text">{{ snmpData[9]['machine_desc'] }}</div>
+            <div class="text">{{ snmpData[4]['machine_desc'] }}</div>
             <div class="picture">
-              <img src="{{ snmpData[9]['img_path'] }}">
+              <img src="{{ snmpData[4]['img_path'] }}">
             </div>
-            <div class="text">{{ snmpData[9]['name'] }}</div>
+            <div class="text">{{ snmpData[4]['name'] }}</div>
           </div>
           <div class="content">
             <div class="row">
-              <div class="tone-text">{{ snmpData[9]['color'] }}</div>
+              <div class="tone-text">{{ snmpData[4]['color'] }}</div>
               <div class="tone-color">
-                <mat-progress-bar class="progress black-progress" mode="determinate" value="{{ snmpData[9]['value_percent'] }}"></mat-progress-bar>
+                <mat-progress-bar class="progress black-progress" mode="determinate" value="{{ snmpData[4]['value_percent'] }}"></mat-progress-bar>
               </div>
               <div class="percent-contain">
-                <div class="percent">{{ snmpData[9]['value_percent'] }}%</div>
+                <div class="percent">{{ snmpData[4]['value_percent'] }}%</div>
               </div>
             </div>
             <div class="row">
-              <div class="tone-text">{{ snmpData[10]['color'] }}</div>
+              <div class="tone-text">{{ snmpData[5]['color'] }}</div>
               <div class="tone-color">
-                <mat-progress-bar class="progress magenta-progress" mode="determinate" value="{{ snmpData[10]['value_percent'] }}"></mat-progress-bar>
+                <mat-progress-bar class="progress magenta-progress" mode="determinate" value="{{ snmpData[5]['value_percent'] }}"></mat-progress-bar>
               </div>
               <div class="percent-contain">
-                <div class="percent">{{ snmpData[10]['value_percent'] }}%</div>
+                <div class="percent">{{ snmpData[5]['value_percent'] }}%</div>
               </div>
             </div>
             <div class="row">
-              <div class="tone-text">{{ snmpData[11]['color'] }}</div>
+              <div class="tone-text">{{ snmpData[6]['color'] }}</div>
               <div class="tone-color">
-                <mat-progress-bar class="progress yellow-progress" mode="determinate" value="{{ snmpData[11]['value_percent'] }}"></mat-progress-bar>
+                <mat-progress-bar class="progress yellow-progress" mode="determinate" value="{{ snmpData[6]['value_percent'] }}"></mat-progress-bar>
               </div>
               <div class="percent-contain">
-                <div class="percent">{{ snmpData[11]['value_percent'] }}%</div>
+                <div class="percent">{{ snmpData[6]['value_percent'] }}%</div>
               </div>
             </div>
             <div class="row">
-              <div class="tone-text">{{ snmpData[12]['color'] }}</div>
+              <div class="tone-text">{{ snmpData[7]['color'] }}</div>
               <div class="tone-color">
-                <mat-progress-bar class="progress cyan-progress" mode="determinate" value="{{ snmpData[12]['value_percent'] }}"></mat-progress-bar>
+                <mat-progress-bar class="progress cyan-progress" mode="determinate" value="{{ snmpData[7]['value_percent'] }}"></mat-progress-bar>
+
               </div>
               <div class="percent-contain">
-                <div class="percent">{{ snmpData[12]['value_percent'] }}%</div>
+                <div class="percent">{{ snmpData[7]['value_percent'] }}%</div>
               </div>
             </div>
           </div>
@@ -178,24 +128,56 @@
                 <div class="percent">{{ snmpData[8]['value_percent'] }}%</div>
               </div>
             </div>
-            <!-- <div class="row">
-                <div class="tone-text">Magenta</div>
-                <div class="tone-color">
-                  <mat-progress-bar class="progress magenta-progress" mode="determinate" value="30"></mat-progress-bar>
-                </div>
+            <div class="row">
+              <div class="tone-text">{{ snmpData[9]['color'] }}</div>
+              <div class="tone-color">
+                <mat-progress-bar class="progress magenta-progress" mode="determinate" value="{{ snmpData[9]['value_percent'] }}"></mat-progress-bar>
               </div>
-              <div class="row">
-                <div class="tone-text">Yellow</div>
-                <div class="tone-color">
-                  <mat-progress-bar class="progress yellow-progress" mode="determinate" value="60"></mat-progress-bar>
-                </div>
+              <div class="percent-contain">
+                <div class="percent">{{ snmpData[9]['value_percent'] }}%</div>
               </div>
-              <div class="row">
-                <div class="tone-text">Cyan</div>
-                <div class="tone-color">
-                  <mat-progress-bar class="progress cyan-progress" mode="determinate" value="20"></mat-progress-bar> 
-                </div>
-              </div> -->
+            </div>
+            <div class="row">
+              <div class="tone-text">{{ snmpData[10]['color'] }}</div>
+              <div class="tone-color">
+                <mat-progress-bar class="progress yellow-progress" mode="determinate" value="{{ snmpData[10]['value_percent'] }}"></mat-progress-bar>
+              </div>
+              <div class="percent-contain">
+                <div class="percent">{{ snmpData[10]['value_percent'] }}%</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="tone-text">{{ snmpData[11]['color'] }}</div>
+              <div class="tone-color">
+                <mat-progress-bar class="progress cyan-progress" mode="determinate" value="{{ snmpData[11]['value_percent'] }}"></mat-progress-bar>
+              </div>
+              <div class="percent-contain">
+                <div class="percent">{{ snmpData[11]['value_percent'] }}%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="each-item">
+        <div class="item-content">
+          <div class="pic-container">
+            <div class="text">{{ snmpData[12]['machine_desc'] }}</div>
+            <div class="picture">
+              <img src="{{ snmpData[12]['img_path'] }}">
+            </div>
+            <div class="text">{{ snmpData[12]['name'] }}</div>
+          </div>
+          <div class="content">
+            <div class="row">
+              <div class="tone-text">{{ snmpData[12]['color'] }}</div>
+              <div class="tone-color">
+                <mat-progress-bar class="progress black-progress" mode="determinate" value="{{ snmpData[12]['value_percent'] }}"></mat-progress-bar>
+              </div>
+              <div class="percent-contain">
+                <div class="percent">{{ snmpData[12]['value_percent'] }}%</div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -203,7 +185,29 @@
 
     </div>
     <div class="item-container">
-
+        <div class="each-item">
+            <div class="item-content">
+              <div class="pic-container">
+                <div class="text">{{ snmpData[13]['machine_desc'] }}</div>
+                <div class="picture">
+                  <img src="{{ snmpData[13]['img_path'] }}">
+                </div>
+                <div class="text">{{ snmpData[13]['name'] }}</div>
+              </div>
+              <div class="content">
+                <div class="row">
+                  <div class="tone-text">{{ snmpData[13]['color'] }}</div>
+                  <div class="tone-color">
+                    <mat-progress-bar class="progress black-progress" mode="determinate" value="{{ snmpData[13]['value_percent'] }}"></mat-progress-bar>
+                  </div>
+                  <div class="percent-contain">
+                    <div class="percent">{{ snmpData[13]['value_percent'] }}%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+          </div>
     </div>
     <div class="item-container">
 

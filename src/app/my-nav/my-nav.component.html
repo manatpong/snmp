@@ -1,6 +1,7 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav sidenav-style" fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'"  [opened]="!(isHandset$ | async)">
-      <!-- 
+  <mat-sidenav #drawer class="sidenav sidenav-style" fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)">
+    <!-- 
        -->
     <mat-toolbar class="nav-toolbar">
       <img src="http://www.siam3dprinter.com/wp-content/uploads/2015/11/Logo-Siam-3D-Printer-Color.png" class="logo">
@@ -8,21 +9,46 @@
 
     <mat-nav-list class="nav-list-style">
 
-       <a id="dashboard" mat-list-item routerLink="/my-dashboard" (click)="selectMenu($event)" [ngClass]="this.selected_menu == 'my-dashboard' ? 'selected-menu' : null">
-          <mat-icon class="icon-spacer"></mat-icon>
-          Dashboard
+      <a id="dashboard" mat-list-item routerLink="/my-dashboard" (click)="selectMenu($event)" [ngClass]="this.selected_menu == 'my-dashboard' ? 'selected-menu' : null">
+        <mat-icon class="icon-spacer">local_printshop</mat-icon>
+        Printer
       </a>
 
-        <a id="my-table" mat-list-item routerLink="/my-table" (click)="selectMenu($event)" [ngClass]="this.selected_menu == 'my-table' ? 'selected-menu' : null">
-          <mat-icon class="mat-icon-rtl-mirror" svgIcon="thumb-up"></mat-icon>
-          Employee
-        </a>
+      <a id="my-table" mat-list-item routerLink="/my-table" (click)="selectMenu($event)" [ngClass]="this.selected_menu == 'my-table' ? 'selected-menu' : null">
+        <mat-icon class="icon-spacer">local_phone</mat-icon>
+        Phone
+      </a>
+
+      <a id="my-table" mat-list-item routerLink="/my-table" (click)="selectMenu($event)" [ngClass]="this.selected_menu == 'my-table' ? 'selected-menu' : null">
+        <mat-icon class="icon-spacer">face</mat-icon>
+        Employee
+      </a>
 
     </mat-nav-list>
   </mat-sidenav>
 
   <mat-sidenav-content class="bg">
     <mat-toolbar class="nav-toolbar">
+
+      <div class="login-container">
+
+        <div class="icon-container">
+          <div class="num-noti"></div>
+          <div class="num-text">6</div>
+          <mat-icon class="noti-icon" >notifications_active</mat-icon>
+          <div class="noti-btn" (click)="showNoti()">&nbsp;</div>
+        </div>
+        <div class="login">
+          Logout
+        </div>
+      </div>
+      <div class="noti-container" *ngIf="show_noti">
+        <div class="head-notification">
+          <div class="text">SNMP</div>
+          <div class="line">&nbsp;</div>
+        </div>
+        
+      </div>
     </mat-toolbar>
     <router-outlet></router-outlet>
   </mat-sidenav-content>

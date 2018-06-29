@@ -16,7 +16,6 @@ import { MyNavComponent } from './my-nav/my-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { TablePaginationExample } from './my-table/my-table.component';
 import { MyDashboardComponent } from './my-dashboard/my-dashboard.component';
-import { AttendanceComponent } from './attendance/attendance.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 
@@ -62,9 +61,7 @@ export const appRoutes: Routes = [
     MatProgressBarModule
 
   ],
-  providers: [
-    AttendanceService,
-  ],
+  providers: [ ],
   bootstrap: [AppComponent],
   exports: [
     RouterModule

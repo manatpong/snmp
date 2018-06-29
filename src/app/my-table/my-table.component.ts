@@ -1,6 +1,6 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {MatPaginator, MatTableDataSource, MatSort} from '@angular/material';
-import { AttendanceService } from '../../services/attendanceService';
+// import { AttendanceService } from '../../services/attendanceService';
 /**
  * @title Table with pagination
  */
@@ -15,7 +15,7 @@ export class TablePaginationExample implements OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
   constructor(
-    private connectionAttendanceService: AttendanceService) {}
+    ) {}
 
   displayedColumns = [
     'id', 
@@ -49,10 +49,10 @@ export class TablePaginationExample implements OnInit {
   // }// กรณีที่ mock up ข้อมูลมา ไม่ต้องรอ
 
   fetchData() {
-    this.connectionAttendanceService.getAttendance().then((obj) => {
-      this.dataSource.data = obj;
-      console.log(this.dataSource.data);
-    });
+    // this.connectionAttendanceService.getAttendance().then((obj) => {
+    //   this.dataSource.data = obj;
+    //   console.log(this.dataSource.data);
+    // });
   }// กรณีที่ ใช้ promiss
 }
 
